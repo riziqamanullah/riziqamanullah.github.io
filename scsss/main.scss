@@ -366,7 +366,12 @@ section{
     clear: both;
 }
 
-
+.gotop{
+    position: fixed;
+    z-index: 999999;
+    bottom: 20px;
+    right: 20px;
+}
 
 // Media Query
 @media (max-width: 1200px) {

@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <title>Portofolio</title>
 </head>
 <body>
     <nav>
         <div class="navbar">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#work">Works</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -55,36 +77,36 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="#img1"><img src="img/work/thumbnail/ui-fruty.jpg" alt=""><span>UI Design</span>
+                    <a href="#img1"><img src="img/work/ui-fruty.jpg" alt=""><span>UI Design</span>
                     </a>
                     <div class="overlay" id="img1">
                         <a href="#work" class="close">X</a>
 
-                        <a href="" class="back">back</a>
+                        <a href="#img3" class="back">back</a>
                         <img src="img/work/ui-fruty.jpg" alt="">
-                        <a href="" class="next">next</a>
+                        <a href="#img2" class="next">next</a>
                     </div>
                 </li>
                 <li>
-                    <a href="#img2"><img src="img/work/thumbnail/low-poly.jpg" alt=""><span>Low Poly Design</span>
+                    <a href="#img2"><img src="img/work/low-poly.jpg" alt=""><span>Low Poly Design</span>
                     </a>
                     <div class="overlay" id="img2">
                         <a href="#work" class="close">X</a>
 
-                        <a href="" class="back">back</a>
+                        <a href="#img1" class="back">back</a>
                         <img src="img/work/low-poly.jpg" alt="">
-                        <a href="" class="next">next</a>
+                        <a href="#img3" class="next">next</a>
                     </div>
                 </li>
                 <li>
-                    <a href="#img3"><img src="img/work/thumbnail/message.jpg" alt=""><span>Typography Design</span>
+                    <a href="#img3"><img src="img/work/message.jpg" alt=""><span>Typography Design</span>
                     </a>
                     <div class="overlay" id="img3">
                         <a href="#work" class="close">X</a>
 
-                        <a href="" class="back">back</a>
+                        <a href="#img2" class="back">back</a>
                         <img src="img/work/message.jpg" alt="">
-                        <a href="" class="next">next</a>
+                        <a href="#img1" class="next">next</a>
                     </div>
                 </li>
                 
@@ -93,7 +115,7 @@
             <a href="https://www.instagram.com/designify.id/" class="more">explore more</a>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Contact Me</h2>
         <div class="container">
             <div class="carded">
@@ -116,8 +138,12 @@
     <footer class="footer">
         <p>© 2020 | All Rights Reserved by RZQ</p>
     </footer>
+    <a href="#home" class="page-scroll gotop">
+        <img src="img/nav3.png" alt="">
+    </a>
 </body>
-<script src="fontawesome/js/all.min.js"></script>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="fontawesome/js/all.min.js"></script>
 <script src="js/script.js"></script>
 </html>

@@ -1,3 +1,17 @@
+// PageScroll
+$('.page-scroll').on('click', function(e) {
+
+    var tujuan = $(this).attr('href');
+   
+    var elemenTujuan = $(tujuan);
+   
+    $('html , body').animate({
+     scrollTop: elemenTujuan.offset().top
+    }, 1250, 'easeOutBounce');
+   
+    e.preventDefault();
+});
+
 // Parallax Effect
 $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
