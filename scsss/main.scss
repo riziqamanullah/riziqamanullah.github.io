@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+}
+@mixin flex-box($direction: row, $space: center) {
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+}
+$primary-color: #68b49b;
+nav{
+    .navbar{
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        
+        ul{
+            list-style-type: none;
+            
+            li{
+                display: inline-block;
+                padding: 15px;
+            
+                a{
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: $primary-color;
+                    transition: .5s all cubic-bezier(0.19, 1, 0.22, 1);
+                    font-weight: bolder;
+                }
+                a:hover{
+                    color: #4b8a75;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+.jumbotron{
+    width: 100%;
+    height: 690px;
+    text-align: center;
+    color: $primary-color;
+    // background-color:rgb(208, 255, 233);
+    background-image: linear-gradient(to bottom, rgb(233, 247, 247), rgb(207, 226, 225));
+    margin-top: -90px;
+    @include flex-box(row, center);
+    ul{
+        list-style-type: none;
+        li{
+            display: block;
+            h1{
+                font-family: 'Sacramento', cursive;
+                font-size: 80px;
+            }
+        }
+    }
+}
